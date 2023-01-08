@@ -72,177 +72,261 @@ body{
     width: 100%;
 }
   
-  .main-nav {
-    background-color: #02353c;
-    color: white;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-  }
+.main-nav {
+  background-color: #02353c;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 60px;
+}
 
-  .skills-page {
-    display: grid;
-    row-gap: 30px;
-    column-gap: 30px;
-    padding: 30px;
-    margin: 0 auto;
-    grid-template-areas:
-      "order" 
-      "payment"
-      "total";
-    grid-template-columns: 1fr;
-    background-color: #2eaf7d;
+.skills-page {
+  display: grid;
+  row-gap: 30px;
+  column-gap: 30px;
+  padding: 30px;
+  margin: 0 auto;
+  grid-template-areas:
+    "order" 
+    "payment"
+    "total";
+  grid-template-columns: 1fr;
+  background-color: rgba(255,250,250, 0.8);
   }
   
-  .logo {
-    height: 25px;
-    position: relative;
-    top: 3px;
-    padding-right: 5px;
+.logo {
+  height: 25px;
+  position: relative;
+  top: 3px;
+  padding-right: 5px;
+}
+  
+.box {
+  background-color: #02353c;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px #02353c;
+  padding: 15px;
+  margin-bottom: 20px;
   }
   
-  .box {
-    background-color: #02353c;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px 2px #02353c;
-    padding: 15px;
-    margin-bottom: 20px;
-    }
+.box-title {
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+}
   
-  .box-title {
-    color: white;
-    font-weight: normal;
-    font-size: 16px;
-  }
+.order {
+  grid-area: order;
+}
   
-  .order {
-    grid-area: order;
-  }
+.payment {
+  grid-area: payment;
+}
   
-  .payment {
-    grid-area: payment;
-  }
+.total {
+  grid-area: total;
+}  
   
-  .total {
-    grid-area: total;
-  }
+.items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
   
-  .items {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.skills {
+  border-bottom: 2px solid black;
+  display: grid;
   
-  .skills {
-    border-bottom: 2px solid black;
-    display: grid;
-  
-    padding: 10px 0;
+  padding: 10px 0;
     
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-areas: 
-      "quantity title   price"
-      "quantity options price";
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: 
+    "quantity title"
+    "quantity options";
   
-    row-gap: 8px;
-    list-style: none;
+  row-gap: 8px;
+  list-style: none;
   
-  }
+}
   
-  .skills:last-child {
-    border-bottom: none;
-  }
+.skills:last-child {
+  border-bottom: none;
+}
   
-  .skills-quantity {
-    grid-area: quantity;
-    color: orange;
-  }
+.skills-quantity {
+  grid-area: quantity;
+  color: #4ac4e2;
+}
   
-  .skills-name {
-    grid-area: title;
-    font-weight: bold;
-    color: #2eaf7d;
-  }
+.skills-name {
+  grid-area: title;
+  font-weight: bold;
+  color: #ff9080;
+}
   
-  .skills-info-list {
-    grid-area: options;
-    color: white;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-  }
+.skills-info-list {
+  grid-area: options;
+  color: white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
   
-  .item-option {
-    margin-bottom: 5px;
-  }
+.item-option {
+  margin-bottom: 5px;
+}
   
-  .input-group {
-    position: relative;
-    margin-bottom: 20px;
-  }
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
   
-  .user-input {
-    background-color: rgba(0,0,0,0);
-    border: 2px black solid;
-    padding: 8px;
-    border-radius: 100px;
-    width: 95%;
-    text-indent: 18px;
-    font-size: 18px;
-  }
+.user-input {
+  background-color: rgba(0,0,0,0);
+  border: 2px black solid;
+  padding: 8px;
+  border-radius: 100px;
+  width: 95%;
+  text-indent: 18px;
+  font-size: 16px;
+  color: white;
+}
   
-  .user-input-label {
-    color: #2eaf7d;
-    background-color: #02353c;
-    font-size: 13px;
-    position: absolute;
-    left: 25px;
-    top: -7px;
-    padding: 0 2px;
-  }
+.user-input-label {
+  color: #ff9080;
+  background-color: #02353c;
+  font-size: 13px;
+  position: absolute;
+  left: 25px;
+  top: -7px;
+  padding: 0 2px;
+}
   
-  .short-input {
-    max-width: 200px;
-  }
+.short-input {
+  max-width: 200px;
+}
   
-  .total {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
   
-  .totals-table {
-    width: 100%;
-    max-width: 500px;
-    margin-bottom: 30px;
-  }
+.totals-table {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
   
-  .totals-table td {
-    padding: 10px;
-  }
+.totals-table td {
+  padding: 10px;
+}
   
-  .totals-table td:last-child {
-    text-align: right;
-  }
+.totals-table td:last-child {
+  text-align: right;
+}
   
-  .final-totals {
-    font-weight: bold;
-  }
+.final-totals {
+  font-weight: bold;
+}
   
-  .checkout {
-    background-color: #02353c;
-    color: white;
-    border: none;
-    padding: 10px 30px;
-    width: 100%;
-    border-radius: 100px;
-    font-size: 16px;
-    box-shadow: 0px 0px 8px 2px rgba(255,255,255,0.3);
-  }
+.checkout {
+  background-color: #02353c;
+  color: white;
+  text-decoration: underline;
+  border: none;
+  padding: 10px 30px;
+  width: 100%;
+  border-radius: 100px;
+  font-size: 16px;
+  box-shadow: 0px 0px 8px 2px rgba(255,255,255,0.3);
+  max-width: 800px;
+}
+
+.checkout:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+  color: #ff9080;
+}
+
+/* About me section */
+#about-me-section{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about-me-nav {
+  background-color: #bff542;
+  color: black;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 60px;
+}
+
+.image{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.image-src{
+  width: 100%;
+}
+
+.caption{
+  text-align: center;
+}
+
+.about-me-page{
+  display: grid;
+  row-gap: 30px;
+  column-gap: 30px;
+  padding: 30px;
+  margin: 0 auto;
+  grid-template-areas:
+    "intro" 
+    "image"
+    "hobbies"
+    "why";
+  grid-template-columns: 1fr;
+  background-color: rgba(255,250,250, 0.8);
+  max-width: 900px;
+}
+
+.intro{
+  grid-area: intro;
+  border-bottom: 1px solid black;
+}
+
+.image{
+  grid-area: image;
+}
+
+.hobbies{
+  grid-area: hobbies;
+  border-bottom: 1px solid black;
+}
+
+.why{
+  grid-area: why;
+}
+
+.header{
+  text-align: center;
+}
 
 /* Screen Responsiveness */
 @media screen and (min-width: 320px){
@@ -254,11 +338,27 @@ body{
 }
 
 @media screen and (min-width: 680px){
-
+  .skills-page{
+    display: grid;
+    grid-template-areas:
+    "order payment"
+    "total total";
+    grid-template-columns: 1fr 1fr;
+  }  
+  .about-me-page{
+    grid-template-areas:
+    "intro image" 
+    "hobbies image"
+    "why image";
+    grid-template-columns: 3fr 1fr; 
+    row-gap: 0px;
+  }
 }
 
 @media screen and (min-width: 768px){
-
+  .intro{
+    
+  }
 }
 
 @media screen and (min-width: 900px){
