@@ -50,7 +50,7 @@ var QuizUI = {
     },
     displayScore: function() {
         var gameOverHTML = "<h1>Thanks for Playing!</h1>";
-        gameOverHTML += "<h2> Your score is: " + quiz.score + " / 5</h2>";
+        gameOverHTML += "<h2> You scored: " + quiz.score + " / 5</h2>";
         this.populateIdWithHTML("quiz", gameOverHTML);
     },
     
@@ -76,8 +76,8 @@ var questions = [
     new Question("What Football team do I support?", [ "Chelsea:", "Arsenal:", "West Ham:"], "Chelsea:"),
     new Question("What Warhammer 40k models do I collect?", ["Space Marines:","Orks:", "Chaos Space Marines:"], "Chaos Space Marines:"),
     new Question("What was the score in the England vs Germany game I was at?", ["2-0:","2-1:", "1-0:"], "2-0:"),
-    new Question("is my Koi fish shirt nice in the picture above?", ["Yes:","No:", "Very No:"], "Yes:"),
-    new Question("What 3 sports do I enjoy", ["Rugby, Cricket, and Tennis:","Rugby, Cricket, and Football:", "Cricket, Football, and Squash:"], "Rugby, Cricket, and Football:")
+    new Question("Is my Koi fish shirt nice in the picture above?", ["Yes:","No:", "Very No:"], "Yes:"),
+    new Question("What 3 sports do I enjoy?", ["Rugby, Cricket, and Tennis:","Rugby, Cricket, and Football:", "Cricket, Football, and Squash:"], "Rugby, Cricket, and Football:")
 ];
 
 //Create Quiz

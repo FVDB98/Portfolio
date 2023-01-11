@@ -34,6 +34,7 @@ body{
 
 .home-title p{
     color: grey;
+    margin: 0;
     font-size: 16px;
     font-size: clamp(1rem, 0.884vw + 0.793rem, 1.5rem);
     line-height: clamp(1.5rem, 0.796vw + 1.314rem, 1.95rem);
@@ -241,7 +242,6 @@ body{
 .checkout {
   background-color: #02353c;
   color: white;
-  text-decoration: underline;
   border: none;
   padding: 10px 30px;
   width: 100%;
@@ -263,8 +263,8 @@ body{
 }
 
 .about-me-nav {
-  background-color: #bff542;
-  color: black;
+  background-color: #02353c;
+  color: white;
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -344,19 +344,28 @@ body{
 }
 
 #question{
-  font-size: 25px;
+  font-size: 22px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.decision{
+  margin: 40px 0px;
 }
 
 #choice0{
   font-size: 20px;
+  margin: 1px;
 }
 
 #choice1{
   font-size: 20px;
+  margin: 1px;
 }
 
 #choice2{
   font-size: 20px;
+  margin: 1px;
 }
 
 
@@ -372,13 +381,17 @@ body{
   line-height: 24px;
   opacity: 1;
   outline: 0 solid transparent;
-  padding: 8px 18px;
+  padding: 8px 16px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   width: fit-content;
   word-break: break-word;
   border: 0;
+}
+
+#progress{
+  font-weight: bold;
 }
 
 /* Footer / Contact Section */
