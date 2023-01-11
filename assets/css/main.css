@@ -447,7 +447,12 @@ body{
 }
 
 @media screen and (min-width: 1200px){
-
+  #skills-section{
+    height: 100vh;
+  }
+  .about-me-section{
+    height: 100vh;
+  }
 }
 
 @media screen and (min-width: 1450px){
