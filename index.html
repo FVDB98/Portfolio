@@ -5,10 +5,12 @@
         <title>Felix van der Borgh | Portfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/main.css">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
+
+        <!-- Home Page -->
         <section class="home-container">
             <section class="content-block">
                 <article class="home-title">
@@ -28,13 +30,15 @@
                         </a>
                     </div>
                     <div class="link-block">
-                        <a href="">
+                        <a href="#footer-container">
                             <h1>Contact</h1>
                         </a>
                     </div>
                 </section>
             </section>
         </section>
+
+        <!-- My Skills Section -->
         <section id="skills-section">
             <nav class="main-nav">
                 <h1 class="brand">
@@ -51,7 +55,7 @@
                         <li class="skills-name">HTML</li>
                             <ul class="skills-info-list">
                                 <li class="item-option">Self-taught | 
-                                CodeAcademy | Front-end Masters</li>                            
+                                CodeAcademy | Frontend Masters</li>                            
                             </ul>
                     </ul>
                     <ul class="skills">
@@ -59,7 +63,7 @@
                         <li class="skills-name">CSS</li>
                             <ul class="skills-info-list">
                                 <li class="item-option">Self-taught | 
-                                CodeAcademy | Front-end Masters</li>
+                                CodeAcademy | Frontend Masters</li>
                             </ul>
                     </ul>
                     <ul class="skills">
@@ -67,7 +71,7 @@
                         <li class="skills-name">JavaScript</li>
                             <ul class="skills-info-list">
                                 <li class="item-option">Self-taught | 
-                                CodeAcademy | Front-end Masters</li>
+                                CodeAcademy | Frontend Masters</li>
                             </ul>
                     </ul>
                     <ul class="skills">
@@ -121,6 +125,7 @@
              </div>
         </section>
 
+        <!--About me Section-->
         <section id="about-me-section">
             <nav class="about-me-nav">
                 <h1 class="about-me-title">About Me</h1>
@@ -156,7 +161,7 @@
                         the experience of using these various mediums have always been at the forefront of 
                         my mind. As a result, when I started to learn more about Front-End and the blend of
                         logic and creativity, a passion for this area of work opened up. By taking the time 
-                        to learn through websites like CodeAcademy and Front-End masters I have been able to 
+                        to learn through websites like CodeAcademy and Frontend Masters I have been able to 
                         become comfortable and confident in this area. However, the rabbit hole of this world
                         has just begun and through working closely with a senior engineer from my previous 
                         Internship I have been able to learn so much more, and ignite this passion further.
@@ -164,5 +169,45 @@
                 </article>
             </section>
         </section>
+        
+        <!-- Quiz Section -->
+        <div class="quiz-container">
+            <div id="quiz" class="centered grid__col--8">
+                <h2>Suprise Quiz!</h2>
+        
+                <h3 id="question" class="headline-secondary--grouped"></h3>
+                <h4 id="score"></h4>
+        
+                <p id="choice0"></p>
+                <button id="guess0" class="btn--quiz">Select Answer</button>
+        
+                <p id="choice1"></p>
+                <button id="guess1" class="btn--quiz">Select Answer</button>
+                
+                <p id="choice2"></p>
+                <button id="guess2" class="btn--quiz">Select Answer</button>
+                <footer>
+                    <p id="progress">Question x of y</p>
+                </footer>
+            </div>
+        </div>
+
+        <!-- Footer and Contact Section -->
+        <footer id="footer-container">
+            <h4>Developed by Felix van der Borgh using HTML, CSS, and JavaScript</h4>
+            <p>
+                Feel free to contact me at:
+            </p>
+            <p>
+                <a href="mailto:felixvanderborgh@gmail.com?">Email: felixvanderborgh@gmail.com</a>
+            </p>    
+            <p>    
+                Telephone: +44 7802 423 429
+            </p>
+            <p>    
+                <a href="https://www.linkedin.com/in/felix-van-der-borgh-5903421b3/" target="_blank">LinkedIn</a> 
+            </p>
+        </footer>
+    <script src="quiz.js"></script>
     </body>
 </html>

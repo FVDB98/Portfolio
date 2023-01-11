@@ -254,7 +254,6 @@ body{
 .checkout:hover{
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   cursor: pointer;
-  color: #ff9080;
 }
 
 /* About me section */
@@ -288,6 +287,7 @@ body{
 
 .caption{
   text-align: center;
+  font-weight: bold;
 }
 
 .about-me-page{
@@ -302,7 +302,7 @@ body{
     "hobbies"
     "why";
   grid-template-columns: 1fr;
-  background-color: rgba(255,250,250, 0.8);
+  background-color: rgb(255 218 185 / 40%);
   max-width: 900px;
 }
 
@@ -326,6 +326,74 @@ body{
 
 .header{
   text-align: center;
+}
+
+/* Quiz Section */
+.quiz-container{
+  text-align: center;
+}
+
+.quiz-container h2 {
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+#question{
+  font-size: 25px;
+}
+
+#choice0{
+  font-size: 20px;
+}
+
+#choice1{
+  font-size: 20px;
+}
+
+#choice2{
+  font-size: 20px;
+}
+
+
+.btn--quiz{
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+/* Footer / Contact Section */
+#footer-container{
+  background-color: #02353c;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 0px;
+}
+
+#footer-container a{
+  text-decoration: none;
+  color: white;
 }
 
 /* Screen Responsiveness */
