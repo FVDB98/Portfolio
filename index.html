@@ -12,6 +12,9 @@
 
         <!-- Home Page -->
         <section class="home-container">
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
             <section class="content-block">
                 <article class="home-title">
                     <h1>Hi,</h1>
@@ -34,7 +37,7 @@
                             <h1>Contact</h1>
                         </a>
                     </div>
-                </section>
+                </section>  
             </section>
         </section>
 
@@ -172,27 +175,29 @@
         
         <!-- Quiz Section -->
         <div class="quiz-container">
-            <div id="quiz" class="centered grid__col--8">
-                <h2>Suprise Quiz!</h2>
-        
-                <h3 id="question" class="headline-secondary--grouped"></h3>
-                <h4 id="score"></h4>
-                <div class="decision">
-                    <p id="choice0"></p>
-                    <button id="guess0" class="btn--quiz">Select Answer</button>
+            <section class="quiz-box">
+                <div id="quiz" class="centered grid__col--8">
+                    <h2>Suprise Quiz!</h2>
+            
+                    <h3 id="question" class="headline-secondary--grouped"></h3>
+                    <h4 id="score"></h4>
+                    <div class="decision">
+                        <p id="choice0"></p>
+                        <button id="guess0" class="btn--quiz">Select Answer</button>
+                    </div>
+                    <div class="decision">  
+                        <p id="choice1"></p>
+                        <button id="guess1" class="btn--quiz">Select Answer</button>
+                    </div>
+                    <div class="decision">
+                        <p id="choice2"></p>
+                        <button id="guess2" class="btn--quiz">Select Answer</button>
+                    </div>  
+                    <footer>
+                        <p id="progress">Question x of y</p>
+                    </footer>
                 </div>
-                <div class="decision">  
-                    <p id="choice1"></p>
-                    <button id="guess1" class="btn--quiz">Select Answer</button>
-                </div>
-                <div class="decision">
-                    <p id="choice2"></p>
-                    <button id="guess2" class="btn--quiz">Select Answer</button>
-                </div>  
-                <footer>
-                    <p id="progress">Question x of y</p>
-                </footer>
-            </div>
+            </section>
         </div>
 
         <!-- Footer and Contact Section -->
@@ -202,7 +207,7 @@
                 Feel free to contact me at:
             </p>
             <p>
-                <a href="mailto:felixvanderborgh@gmail.com?">Email: felixvanderborgh@gmail.com</a>
+                <a href="mailto:felixvanderborgh@gmail.com?">Email: <span>felixvanderborgh@gmail.com</span></a>
             </p>    
             <p>    
                 Telephone: +44 7802 423 429
