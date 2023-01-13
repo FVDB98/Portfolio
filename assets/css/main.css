@@ -127,7 +127,7 @@ body{
     "shipping"
     "total";
   grid-template-columns: 1fr;
-  background-color: gainsboro;
+  background-color: white;
   }
   
 .logo {
@@ -275,7 +275,7 @@ body{
   
 .checkout {
   background-color: #1a3065;
-  color: #fff4d5;
+  color: white;
   border: none;
   padding: 10px 30px;
   width: 100%;
@@ -322,6 +322,7 @@ body{
 .caption{
   text-align: center;
   font-weight: bold;
+  font-style: italic;
 }
 
 .about-me-page{
@@ -337,7 +338,7 @@ body{
     "why"
     "quiz";
   grid-template-columns: 1fr;
-  background-color: gainsboro;
+  background-color: white;
   max-width: 900px;
 }
 
@@ -415,7 +416,7 @@ body{
 
 
 .btn--quiz{
-  background: #5E5DF0;
+  background: #1a3065;
   border-radius: 999px;
   box-shadow: #5E5DF0 0 10px 20px -10px;
   box-sizing: border-box;
@@ -451,7 +452,7 @@ body{
 }
 
 #footer-container a{
-  text-decoration: underline;
+  text-decoration: none;
   color: white;
 }
 
@@ -483,7 +484,7 @@ body{
     "intro image" 
     "hobbies image"
     "why image"
-    "quiz image";
+    "quiz quiz";
     grid-template-columns: 3fr 1fr; 
     row-gap: 0px;
   }
