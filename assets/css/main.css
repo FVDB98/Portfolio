@@ -124,9 +124,10 @@ body{
   grid-template-areas:
     "order" 
     "payment"
+    "shipping"
     "total";
   grid-template-columns: 1fr;
-  background-color: white;
+  background-color: gainsboro;
   }
   
 .logo {
@@ -137,15 +138,15 @@ body{
 }
   
 .box {
-  background-color: #1a3065;
+  background-color: white;
   border-radius: 5px;
-  /* box-shadow: 0px 0px 10px 2px #1a3065; */
+  box-shadow: 0px 0px 10px 0px black;
   padding: 15px;
   margin-bottom: 20px;
   }
   
 .box-title {
-  color: #fff4d5;
+  color: black;
   font-weight: normal;
   font-size: 16px;
 }
@@ -156,6 +157,11 @@ body{
   
 .payment {
   grid-area: payment;
+}
+
+.shipping{
+  grid-area: shipping;
+  max-width: 800px;
 }
   
 .total {
@@ -190,18 +196,18 @@ body{
   
 .skills-quantity {
   grid-area: quantity;
-  color: #ff9080;
+  color: black;
 }
   
 .skills-name {
   grid-area: title;
   font-weight: bold;
-  color: #0c7f8b;
+  color: black;
 }
   
 .skills-info-list {
   grid-area: options;
-  color: #fff4d5;
+  color: black;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -225,12 +231,12 @@ body{
   width: 95%;
   text-indent: 18px;
   font-size: 16px;
-  color: white;
+  color: black;
 }
   
 .user-input-label {
-  color: #ff9080;
-  background-color: #1a3065;
+  color: #1a3065;
+  background-color: white;
   font-size: 13px;
   position: absolute;
   left: 25px;
@@ -291,7 +297,7 @@ body{
 }
 
 .about-me-nav {
-  background-color: #02353c;
+  background-color: #1a3065;
   color: white;
   font-size: 20px;
   display: flex;
@@ -328,9 +334,10 @@ body{
     "intro" 
     "image"
     "hobbies"
-    "why";
+    "why"
+    "quiz";
   grid-template-columns: 1fr;
-  background-color: rgb(255 218 185 / 40%);
+  background-color: gainsboro;
   max-width: 900px;
 }
 
@@ -361,10 +368,11 @@ body{
   text-align: center;
   display: flex;
   justify-content: center;
+  grid-area: quiz;
 }
 
 .quiz-box{
-  background-color: rgb(255 218 185 / 40%);
+  background-color: white;
   border-radius: 10px;
   margin: 10px;
   box-shadow: 0px 0px 8px 1px rgb(0 0 0 / 60%);
@@ -434,7 +442,7 @@ body{
 
 /* Footer / Contact Section */
 #footer-container{
-  background-color: #02353c;
+  background-color: #1a3065;
   color: white;
   width: 100%;
   text-align: center;
@@ -458,7 +466,7 @@ body{
 
 @media screen and (min-width: 480px){
   .quiz-box{
-    max-width: 480px;
+    width: 500px;
   }
 }
 
@@ -466,24 +474,23 @@ body{
   .skills-page{
     display: grid;
     grid-template-areas:
-    "order payment"
-    "total total";
-    grid-template-columns: 1fr 1fr;
+        "order payment shipping"
+        "total total total";
+    grid-template-columns: 1fr 1fr 1fr;
   }  
   .about-me-page{
     grid-template-areas:
     "intro image" 
     "hobbies image"
-    "why image";
+    "why image"
+    "quiz image";
     grid-template-columns: 3fr 1fr; 
     row-gap: 0px;
   }
 }
 
 @media screen and (min-width: 768px){
-  .intro{
-    
-  }
+
 }
 
 @media screen and (min-width: 900px){
@@ -494,10 +501,8 @@ body{
 
 }
 
-@media screen and (min-width: 1450px){
-  #skills-section{
-    height: 100vh;
-  }
+@media screen and (min-width: 1500px){
+
 }
 
 @media screen and (min-width: 1600px){

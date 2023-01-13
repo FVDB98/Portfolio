@@ -52,7 +52,7 @@
             </nav>
             <div class="skills-page">
                 <section class="order box">
-                    <h2 class="box-title">SKILLS</h2>
+                    <h2 class="box-title">SKILLS:</h2>
                     <ul class="skills">
                         <li class="skills-quantity">x1</li>
                         <li class="skills-name">HTML</li>
@@ -88,14 +88,14 @@
                 </section>
                 <section class="payment">
                     <div class="name-box box">
-                        <h2 class="box-title">NAME</h2>
+                        <h2 class="box-title">NAME:</h2>
                         <div class="input-group">
                             <label class="user-input-label" for="name">Name for order</label>
                             <input type="text" class="user-input" id="name">
                         </div>
                     </div>
                     <div class="cc-box box">    
-                        <h2 class="box-title">PAYMENT</h2>
+                        <h2 class="box-title">PAYMENT:</h2>
                         <div class="input-group">
                             <label class="user-input-label" for="cc">Credit card number</label>
                             <input type="text" class="user-input" id="cc">
@@ -103,6 +103,39 @@
                         <div class="input-group">
                             <label class="user-input-label" for="ccv">CCV number</label>
                             <input type="text" class="user-input" id="ccv">
+                        </div>
+                    </div>
+                </section>
+                <section class="shipping">
+                    <div class="shipping box">
+                        <h2 class="box-title">DELIVER TO:</h2>
+                        <div class="input-group">
+                            <label class="user-input-label" for="company">Company Name</label>
+                            <input type="text" class=user-input id="company">
+                        </div>
+                        <div class="input-group">
+                            <label class="user-input-label" for="country">Country</label>
+                            <input type=text class="user-input" id="country">
+                        </div>
+                        <div class="input-group">
+                            <label class="user-input-label" for="address">Address</label>
+                            <input type=text class="user-input" id="address">
+                        </div>
+                        <div class="input-group">
+                            <label class="user-input-label" for="address-two">Address 2 (Optional)</label>
+                            <input type=text class="user-input" id="address-two">
+                        </div>
+                        <div class="input-group">
+                            <label class="user-input-label" for="postcode">Postcode</label>
+                            <input type=text class="user-input" id="postcode">
+                        </div>
+                        <div class="input-group">
+                            <label class="user-input-label" for="city">City</label>
+                            <input type=text class="user-input" id="city">
+                        </div>
+                        <div class="input-group">
+                            <label class="user-input-label" for="phone">Phone</label>
+                            <input type=text class="user-input" id="phone">
                         </div>
                     </div>
                 </section>
@@ -170,35 +203,34 @@
                         Internship I have been able to learn so much more, and ignite this passion further.
                     </p>
                 </article>
-            </section>
-        </section>
-        
-        <!-- Quiz Section -->
-        <div class="quiz-container">
-            <section class="quiz-box">
-                <div id="quiz" class="centered grid__col--8">
-                    <h2>Suprise Quiz!</h2>
-            
-                    <h3 id="question" class="headline-secondary--grouped"></h3>
-                    <h4 id="score"></h4>
-                    <div class="decision">
-                        <p id="choice0"></p>
-                        <button id="guess0" class="btn--quiz">Select Answer</button>
-                    </div>
-                    <div class="decision">  
-                        <p id="choice1"></p>
-                        <button id="guess1" class="btn--quiz">Select Answer</button>
-                    </div>
-                    <div class="decision">
-                        <p id="choice2"></p>
-                        <button id="guess2" class="btn--quiz">Select Answer</button>
-                    </div>  
-                    <footer>
-                        <p id="progress">Question x of y</p>
-                    </footer>
+                <!-- Quiz Section -->
+                <div class="quiz-container">
+                    <section class="quiz-box">
+                        <div id="quiz" class="centered grid__col--8">
+                            <h2>Suprise Quiz!</h2>
+                    
+                            <h3 id="question" class="headline-secondary--grouped"></h3>
+                            <h4 id="score"></h4>
+                            <div class="decision">
+                                <p id="choice0"></p>
+                                <button id="guess0" class="btn--quiz">Select Answer</button>
+                            </div>
+                            <div class="decision">  
+                                <p id="choice1"></p>
+                                <button id="guess1" class="btn--quiz">Select Answer</button>
+                            </div>
+                            <div class="decision">
+                                <p id="choice2"></p>
+                                <button id="guess2" class="btn--quiz">Select Answer</button>
+                            </div>  
+                            <footer>
+                                <p id="progress">Question x of y</p>
+                            </footer>
+                        </div>
+                    </section>
                 </div>
             </section>
-        </div>
+        </section>
 
         <!-- Footer and Contact Section -->
         <footer id="footer-container">
