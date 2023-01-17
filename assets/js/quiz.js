@@ -71,7 +71,7 @@ var QuizUI = {
         this.populateIdWithHTML("progress", "Question " + currentQuestionNumber + " of " + quiz.questions.length);
     }
 };
-//Create Questions
+//Create Questions (Array)
 var questions = [
     new Question("What Football team do I support?", [ "Chelsea:", "Arsenal:", "West Ham:"], "Chelsea:"),
     new Question("What Warhammer 40k models do I collect?", ["Space Marines:","Orks:", "Chaos Space Marines:"], "Chaos Space Marines:"),

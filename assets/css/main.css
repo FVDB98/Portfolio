@@ -11,6 +11,7 @@ body{
     width: 100%;
     height: 100vh;
     position: relative;
+    overflow-x: hidden;
 }
 
 .bg{
@@ -49,7 +50,7 @@ body{
     position: absolute;
     top: 40%;
     transform: translateY(-50%);
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .home-title h1{
@@ -58,6 +59,10 @@ body{
     color: white;
     font-size: clamp(3.438rem, 2.762vw + 2.79rem, 5rem);
     line-height: clamp(5.156rem, 2.376vw + 4.599rem, 6.5rem);
+}
+
+.home-title span{
+    display: block;
 }
 
 .home-title p{
@@ -72,11 +77,12 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 20px;
+    justify-content: space-between;
+    padding: 0px;
+    margin-top: 40px;
 }
 
-.link-block a h1{
+.link-block a{
     border: 1px solid aqua;
     padding: 10px;
     border-radius: 20px;
@@ -86,7 +92,7 @@ body{
     line-height: clamp(1.5rem, 0.796vw + 1.314rem, 1.95rem);
 }
 
-.link-block a h1:hover{
+.link-block a:hover{
     box-shadow: 0px 0px 14px 14px rgba(0,102,255,0.5);
     transition-duration: 0.5s;
 }
@@ -94,6 +100,11 @@ body{
 .link-block a{
     text-decoration: none;
     color: white;
+    padding: 10px 15px;
+}
+
+.link-block{
+  list-style: none;
 }
 
 /* Skills Section */
@@ -377,6 +388,10 @@ body{
   border-radius: 10px;
   margin: 10px;
   box-shadow: 0px 0px 8px 1px rgb(0 0 0 / 60%);
+  min-height: 565px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .quiz-container h2 {
@@ -469,6 +484,12 @@ body{
   .quiz-box{
     width: 500px;
   }
+  .content-block{
+    padding: 10px 40px;
+  }
+  .links-container{
+    justify-content: space-evenly;
+  }
 }
 
 @media screen and (min-width: 680px){
@@ -495,7 +516,10 @@ body{
 }
 
 @media screen and (min-width: 900px){
-
+  .links-container{
+    width: 80%;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 1200px){
